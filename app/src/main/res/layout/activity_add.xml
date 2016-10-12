@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="16dp">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextAddTitle"
+
+        android:text="제목을 입력하세요"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/editTextAddWeather"
+        android:text="날씨를 입력하세요"
+        android:textColor="#727272"
+        android:layout_below="@+id/btnInputDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/editTextAddPlace"
+        android:text="장소를 입력하세요"
+        android:textColor="#727272"
+        android:layout_below="@+id/editTextAddWeather"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/editTextAddContent"
+        android:text="내용을 입력하세요"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/editTextAddPlace"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="추가하기"
+        android:id="@+id/buttonAddOK"
+        android:layout_marginBottom="23dp"
+        android:onClick="onClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/editTextAddContent"
+        android:layout_alignStart="@+id/editTextAddContent"
+        android:layout_marginLeft="16dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="취소"
+        android:id="@+id/buttonAddCancel"
+        android:layout_alignTop="@+id/buttonAddOK"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="23dp"
+        android:onClick="onClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="새 일기 추가하기"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/editTextAddTitle"
+        android:layout_alignStart="@+id/editTextAddTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="날짜입력하기"
+        android:id="@+id/btnInputDate"
+        android:onClick="onClick"
+        android:nestedScrollingEnabled="false"
+        android:layout_below="@+id/editTextAddTitle"
+        android:layout_alignLeft="@+id/editTextAddTitle"
+        android:layout_alignStart="@+id/editTextAddTitle"
+        android:layout_marginTop="26dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="날짜를 입력하세요"
+        android:id="@+id/editTextAddDate"
+        android:layout_alignBaseline="@+id/btnInputDate"
+        android:layout_alignBottom="@+id/btnInputDate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick" />
+
+</RelativeLayout>

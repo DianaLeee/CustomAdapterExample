@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.leedayeon.final_report_02_20141095.MainActivity">
+
+    <item
+        android:id="@+id/action_add"
+        android:orderInCategory="1"
+        android:title="새 일기 추가하기"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_myself"
+        android:orderInCategory="2"
+        android:title="개발자소개"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="3"
+        android:title="검색하기"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_quit"
+        android:orderInCategory="4"
+        android:title="종료하기"
+        app:showAsAction="never" />
+</menu>

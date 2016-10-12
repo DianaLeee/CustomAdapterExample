@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="일기 검색"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageButtonSearch"
+        android:src="@drawable/abc_ic_search_api_material"
+        android:background="#BBDEFB"
+        android:cropToPadding="false"
+        android:onClick="onClick"
+        android:layout_alignTop="@+id/editTextSearch"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/editTextSearch" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextSearch"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/imageButtonSearch"
+        android:layout_toStartOf="@+id/imageButtonSearch" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연도별 검색"
+            android:id="@+id/rbYear"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="월별 검색"
+            android:id="@+id/rbMonth"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView2"
+        android:layout_below="@+id/imageButtonSearch"
+        android:layout_marginTop="30dp"
+        android:background="#ffffff"
+        android:divider="#ffffff"
+        android:footerDividersEnabled="false"
+        android:dividerHeight="40dp"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:layout_alignRight="@+id/imageButtonSearch"
+        android:layout_alignEnd="@+id/imageButtonSearch" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닫기"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageButtonSearch"
+        android:layout_alignEnd="@+id/imageButtonSearch"
+        android:onClick="onClick" />
+
+</RelativeLayout>
